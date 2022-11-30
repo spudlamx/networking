@@ -4,9 +4,7 @@ This is a client sever program where the client can send items to the sever, and
 I created this program to learn about networking between sever and client.
 In order to run this program you will need to run the server file first, then, in a seperate terminal run the client file. it then will print a menu of how to use program.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (you will need to show two pieces of software running and communicating with each other) and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/WkMNJh51mC8)
 
 # Network Communication
 
