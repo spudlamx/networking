@@ -1,10 +1,8 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-{Provide a description the networking program that you wrote. Describe how to use your software.  If you did Client/Server, then you will need to describe how to start both.}
-
-{Describe your purpose for writing this software.}
+This is a client sever program where the client can send items to the sever, and when requested, the server will send the list of items back to the user. 
+I created this program to learn about networking between sever and client.
+In order to run this program you will need to run the server file first, then, in a seperate terminal run the client file. it then will print a menu of how to use program.
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (you will need to show two pieces of software running and communicating with each other) and a walkthrough of the code.}
 
@@ -12,27 +10,23 @@
 
 # Network Communication
 
-{Describe the architecture that you used (client/server or peer-to-peer)}
+The architecture used is a client to sever model.
 
-{Identify if you are using TCP or UDP and what port numbers are used.}
+This program uses TCP, and runs on port 5050.
 
-{Identify the format of messages being sent between the client and server or the messages sent between two peers.}
+The format for the messages is UTF-8.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+Created using Visual Studio Code.
+Writen in python using the socket and threading libraries.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [YouTube](https://www.youtube.com/watch?v=3QiPPX-KeSc)
+* [Tutorials point](https://www.tutorialspoint.com/Peer-to-Peer-Computing)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Add GUI
+* Simplify ease of access from other devices.

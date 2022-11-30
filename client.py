@@ -1,6 +1,5 @@
 import socket
 
-import socket
 HEADER = 64
 PORT = 5050
 FORMAT = 'utf-8'
@@ -12,20 +11,28 @@ client = socket. socket (socket.AF_INET, socket.SOCK_STREAM)
 client.connect (ADDR)
 
 def send(msg):
+    # encodes message length and message
     message = msg.encode(FORMAT)
     msg_length = len(message)
     send_length = str(msg_length).encode(FORMAT)
     send_length += b' ' * (HEADER - len(send_length))
+
+    # send length and message
     client.send(send_length)
     client.send(message)
+
+    # recieves message from server
     recieved = str(client.recv(2048))
     recieved = recieved[2:-1]
+    # splits items sent by server
     recieved = recieved.split(".|.")
+    # prints each item
     for i in recieved:
         print(i)
 
 
 running = True
+
 while running:
     choice = -1
     # Prints menu
